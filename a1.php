@@ -9,8 +9,8 @@
 
 <body>
 
-
     <?php
+    // 1.
     $courseGrades = array(
         array("Webcoding:", 88),
         array("UCD:", 66),
@@ -49,6 +49,8 @@
 
     echo "<br><br><br><br><br><br>";
 
+    // 2.  
+    
     $printStars = function ($nr) {
 
         for ($i = $nr; $i > 0; $i--) {
@@ -56,18 +58,13 @@
                 echo "*";
             }
             echo "<br>";
-
         };
 
     };
-    $printStars(236);
+
+    $printStars(20);
 
     ?>
-
-
-
-
-
 
 </body>
 
