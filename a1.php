@@ -16,10 +16,11 @@
         // 1.
         $courseGrades = array(
             // Define array of course grades.
-            array("Webcoding:", 88),
-            array("User Centred Design:", 66),
-            array("Graphic Design Prinsiples:", 80),
-            array("Exphil:", 13)
+            array("Webcoding", 88),
+            array("User Centred Design", 66),
+            array("Graphic Design Prinsiples", 80),
+            array("Exphil", 13),
+            array("Math", -3)
         );
 
         // Define a function to check and display grades.
@@ -31,17 +32,17 @@
 
                 // Check the grade and assign a corresponding letter grade.
                 if ($grade >= 85 && $grade <= 100) {
-                    echo "$name A";
+                    echo $name . ": A";
                 } elseif ($grade >= 75 && $grade <= 84) {
-                    echo "$name B";
+                    echo $name . ": B";
                 } elseif ($grade >= 65 && $grade <= 74) {
-                    echo "$name C";
+                    echo $name . ": C";
                 } elseif ($grade >= 50 && $grade <= 64) {
-                    echo "$name D";
+                    echo $name . ": D";
                 } elseif ($grade < 50 && $grade >= 0) {
-                    echo "$name F";
+                    echo $name . ": F";
                 } else {
-                    echo "Error - $name does not a valid score"; // Display an error message for invalid grades.
+                    echo "Error - <i>$name</i> does not have a valid score"; // Display an error message for invalid grades.
                 }
                 echo "<br>";
             }
